@@ -1,0 +1,30 @@
+.btn {
+  /*---YES---*/
+  border: var(--accent-color) solid 1px;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 12px 20px;
+
+  @include font(12px, 400, 1.33);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color-theme-dark);
+    background-color: var(--accent-color);
+  }
+  /*---end YES---*/
+}
+
+.btn_theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+.btn_theme-light {
+  color: var(--secondary-text-color-theme-light);
+}

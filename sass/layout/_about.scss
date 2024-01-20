@@ -1,0 +1,32 @@
+.about__container {
+  display: flex;
+}
+.about__left-side {
+  margin-right: 64px;
+}
+.about__gallery {
+  display: flex;
+}
+.about__gallery-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__suptitle {
+  /*для ::before */
+  /*align-items: center;
+  display: flex;
+*/
+
+  line-height: 1.18;
+
+  color: var(--secondary-text-color-theme-light);
+}
+
+.about__text {
+  margin-bottom: 40px;
+
+  @include font(14px, 400, 1.86);
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-light);
+}

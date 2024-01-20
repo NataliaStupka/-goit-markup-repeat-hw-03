@@ -1,0 +1,118 @@
+.employees__section {
+  background-color: #f7f7f7;
+}
+
+.employees__title {
+  /*-----YES------*/
+  margin-bottom: 44px;
+  /*---end YES------*/
+}
+.employees__list {
+  /*YES*/
+  /*сітка*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /*end YES*/
+
+  /*якщо без сітки то достатньо
+   display: flex;
+  justify-content: space-between;
+  */
+}
+.employees__card {
+  /*YES*/
+  /*сітка*/
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  /*end YES*/
+}
+.employees__wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  margin-bottom: 30px;
+
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translate(0px, 0px);
+  }
+}
+
+/*----*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0px, 100%);
+  min-height: 100%;
+  overflow-y: auto; /*для преповнюваного контенту*/
+
+  @include font(16px, 600, 1.86);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--secondary-text-color-theme-light);
+  background-color: hsla(189, 40%, 93%, 0.5);
+  padding: 20px;
+
+  transition: transform var(--transition);
+}
+
+.employees__name {
+  margin-bottom: 8px;
+
+  @include font(18px, 400, 1.39);
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: var(--secondary-text-color-theme-light);
+}
+
+.employees__position {
+  margin-bottom: 30px;
+
+  @include font($fs: 14px);
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: var(--accent-color);
+}
+
+.employees__social-list {
+  /*часто, все що під фото, групують у дів і додють йому падінги, а на ul - space-between*/
+  @include flex-center-horiz;
+}
+
+.employees__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.employees__social-link {
+  /*yes*/
+  @include flex-center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-text-color-theme-dark);
+  fill: var(--secondary-text-color-theme-light);
+
+  transition: fill var(--transition), background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    background-color: var(--primary-text-color-theme-light);
+  }
+  /*end yes*/
+}
+.social__icon {
+  /*yes*/
+  width: 20px;
+  height: 20px;
+  /*end yes*/
+}

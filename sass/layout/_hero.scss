@@ -1,0 +1,46 @@
+.hero__container {
+  /*yes*/
+  display: flex;
+  /*end yes*/
+}
+.hero__left-side {
+  /*yes*/
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  padding-left: 34px;
+  padding-bottom: 40px;
+  /*end yes*/
+}
+.hero__media-list {
+  /*yes*/
+  transform-origin: left top; /*стосовно чого здійснюємо обертання*/
+  transform: rotate(-90deg) translateX(-18px); /*відмінусоват висоту елементу в неперевернутому стані*/
+
+  /*end yes*/
+}
+
+.hero__right-side {
+  /*yes*/
+  flex-grow: 1; /*щоб зайняло більше місця*/
+
+  padding-top: 272px; /*з урахуванням хедеру, що вийнятий з потоку*/
+  padding-bottom: 206px;
+  padding-left: 100px;
+  background-color: var(--secondary-text-color-theme-light);
+  background-image: linear-gradient(#26191b33, #191c2633), url(../imeges/hero/hero-img\ 3.jpg);
+  background-size: cover;
+  /*end yes*/
+
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.hero__title {
+  /*yes*/
+  font-family: var(--secondary-font);
+  @include font($fs: 72px, $fw: 700, $lh: 1.18);
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color-theme-dark);
+  /*end yes*/
+}

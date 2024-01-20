@@ -1,0 +1,15 @@
+.section-title {
+  /*----YES----*/
+  font-family: Raleway;
+
+  @include font(42px, 700, 1.17);
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  /*----YES----*/
+
+  color: var(--secondary-text-color-theme-light);
+}
+.section-title_dark {
+  margin-bottom: 44px;
+  color: var(--secondary-text-color-theme-dark);
+}

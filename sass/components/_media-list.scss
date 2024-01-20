@@ -1,0 +1,34 @@
+/*---Instagram, Youtube----*/
+.media-list {
+  /*YES*/
+  @include flex-center-vert;
+  /*end YES*/
+
+  &::before {
+    @include pseudo;
+
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    background: var(--secondary-text-color-theme-light);
+    flex-shrink: 0;
+  }
+}
+
+.media-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.media-list__link {
+  @include font($fw: 600);
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-color-theme-light);
+
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
