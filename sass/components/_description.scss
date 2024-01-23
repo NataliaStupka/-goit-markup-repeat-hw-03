@@ -1,14 +1,28 @@
 .section-description {
-  /*---YES----*/
-  @include font($fs: 18px, $lh: 1.67);
+  @include font($fs: 16px, $lh: 1.63);
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
-  /*---YES----*/
+  margin-bottom: 20px;
+  width: 340px;
+}
+//tablet
+@media screen and (min-width: 768px) {
+  .section-description {
+    width: 310px;
+  }
 }
 
-.section-description:not(:last-child) {
-  margin-bottom: 20px;
-}
-.section-description_light {
-  color: var(--primary-text-color-theme-light);
+//desctop
+@media screen and (min-width: 1200px) {
+  .section-description {
+    @include font($fs: 18px, $lh: 1.67);
+    width: 395px;
+  }
+
+  // .section-description:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
+  .section-description_light {
+    color: var(--primary-text-color-theme-light);
+  }
 }

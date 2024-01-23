@@ -33,10 +33,11 @@
 
   <body>
     <!--HEADER-->
+
+    <!--     
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <!--logo (./ - на файл idex.html)-->
           <a href="./" class="logo header__logo link animate__pulse" id="arrow-up">
             <svg class="logo__icon" width="68" height="54">
               <use href="./imeges/sprite.svg#icon-logo"></use>
@@ -61,7 +62,7 @@
         <a href="tel:+380441111111" class="contact-phone-number link">+38 044 111 11 11</a>
         <button type="button" class="btn btn_theme-dark" data-modal-open>онлайн запис</button>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!--HERO-->
@@ -85,36 +86,104 @@
           <div class="hero__right-side">
             <p lang="en" class="suptitle suptitle_theme-dark">A hair salon for men in Kyiv</p>
             <h1 lang="en" class="hero__title">Barbeshop</h1>
-            <p class="section-description">
-              Ми експерти в модних зачісках.<br />
-              Працюємо швидко, обережно та зі смаком.
+            <p class="section-description hero__description">
+              Ми експерти в модних чоловічих зачісках. Працюємо швидко, обережно та зі смаком.
             </p>
           </div>
         </div>
       </section>
 
       <!--About-->
+
       <section class="about section">
         <div class="container about__container">
           <div class="about__left-side">
             <ul class="about__gallery list">
               <li class="about__gallery-item">
-                <img
+                <!-- <img
                   class="about__gallery-img"
                   src="./imeges/about/about-img1.jpg"
                   alt="майстер за роботою"
                   width="270"
                   height="445"
-                />
+                /> -->
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./imeges/about/desctop-about-1@1x.webp,
+                      ./imeges/about/desctop-about-1@2x.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./imeges/about/desctop-about-1@1x.jpg,
+                      ./imeges/about/desctop-about-1@2x.jpg
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./imeges/about/tablet-about-1@1x.webp,
+                      ./imeges/about/tablet-about-1@2x.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./imeges/about/tablet-about-1@1x.jpg,
+                      ./imeges/about/tablet-about-1@2x.jpg
+                    "
+                  />
+                  <img class="about__gallery-img src="#" alt="майстер за роботою" />
+                </picture>
               </li>
               <li class="about__gallery-item">
-                <img
+                <!-- <img
                   class="about__gallery-img"
                   src="./imeges/about/about-img2.jpg"
                   alt="майстер за роботою"
                   width="270"
                   height="445"
-                />
+                /> -->
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./imeges/about/desctop-about-2@1x.webp,
+                      ./imeges/about/desctop-about-2@2x.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./imeges/about/desctop-about-2@1x.jpg,
+                      ./imeges/about/desctop-about-2@2x.jpg
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./imeges/about/tablet-about-2@1x.webp,
+                      ./imeges/about/tablet-about-2@2x.webp
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./imeges/about/tablet-about-2@1x.jpg,
+                      ./imeges/about/tablet-about-2@2x.jpg
+                    "
+                  />
+                  <img class="about__gallery-img" src="#" alt="майстер за роботою" />
+                </picture>
               </li>
             </ul>
           </div>
@@ -131,6 +200,7 @@
               яка завжди з клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного,
               хто до нас приходить!
             </p>
+
             <!--розібратись із data-modal-open-->
             <button type="button" class="btn btn_theme-light" data-modal-open>онлайн-запис</button>
           </div>
@@ -138,52 +208,11 @@
       </section>
 
       <!--Services-->
+
       <section class="services section">
         <div class="container services__container">
           <p class="suptitle suptitle_theme-dark">Проведи час у компанії кращих майстрів.</p>
           <h2 id="services" class="section-title section-title_dark">Послуги та ціни.</h2>
-
-          <!--можна у вигляді таблиці (або списком)-->
-          <!--
- <div class="services-table-container">
-           <table class="services-table list">
-            <tr class="services-table-row">
-              <td class="services-table-name">Чоловіча стрижка</td>
-              <td class="services-table-price">від 300 грн</td>
-            </tr>
-            <tr class="services-table-row">
-              <td class="services-table-name">Стрижка бороди</td>
-              <td class="services-table-price">від 200 грн</td>
-            </tr>
-            <tr class="services-table-row">
-              <td class="services-table-name">Стрижка вусів</td>
-              <td class="services-table-price">від 200 грн</td>
-            </tr>
-            <tr class="services-table-row">
-              <td class="services-table-name">Гоління небезпечною бритвою</td>
-              <td class="services-table-price">від 200 грн</td>
-            </tr>
-          </table>
-          <table class="services-table list">
-            <tr class="services-table-row">
-              <td class="services-table-name">Стрижка у стажера</td>
-              <td class="services-table-price">від 50 грн</td>
-            </tr>
-            <tr class="services-table-row">
-              <td class="services-table-name">Стрижка під насадку</td>
-              <td class="services-table-price">від 200 грн</td>
-            </tr>
-            <tr class="services-table-row">
-              <td class="services-table-name">Дитяча стрижка (до 12 років)</td>
-              <td class="services-table-price">від 300 грн</td>
-            </tr>
-            <tr class="services-table-row">
-              <td class="services-table-name">Камуфлювання сивини</td>
-              <td class="services-table-price">від 200 грн</td>
-            </tr>
-          </table>
-         </div>
-        -->
 
           <div class="services__list-container">
             <ul class="services__list list">
@@ -223,6 +252,7 @@
               </li>
             </ul>
           </div>
+
           <!--розібратись із data-modal-open-->
           <button type="button" class="services__btn btn btn_theme-dark" data-modal-open>
             онлайн запис
@@ -231,6 +261,8 @@
       </section>
 
       <!--Advantages-->
+
+      <!--       
       <section class="advantages section">
         <div class="container advantages__container">
           <div class="advantages__left-side">
@@ -275,9 +307,11 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!--EMPLOYEES-->
+
+      <!--       
       <section class="employees__section section">
         <div class="container">
           <p class="suptitle">Для справжніх поціновувачів атмосфери</p>
@@ -300,9 +334,10 @@
               </a>
 
               <h3 class="employees__name" lang="en">John Smith</h3>
-              <p class="employees__position" lang="en">Extreme Barber</p>
+              <p class="employees__position" lang="en">Extreme Barber</p> -->
 
-              <!--соціальні сторінки-->
+      <!--==КОМЕНТАР== соціальні сторінки-->
+      <!--               
               <ul class="employees__social-list list">
                 <li class="employees__social-item">
                   <a
@@ -370,9 +405,10 @@
                 </p>
               </a>
               <h3 class="employees__name" lang="en">Michele Doe</h3>
-              <p class="employees__position" lang="en">Extreme Barber</p>
+              <p class="employees__position" lang="en">Extreme Barber</p> -->
 
-              <!--соціальні сторінки-->
+      <!--==КОМЕНТАР== соціальні сторінки-->
+      <!--               
               <ul class="employees__social-list list">
                 <li class="employees__social-item">
                   <a
@@ -440,9 +476,10 @@
                 </p>
               </a>
               <h3 class="employees__name" lang="en">Alan Blac</h3>
-              <p class="employees__position" lang="en">Extreme Barber</p>
+              <p class="employees__position" lang="en">Extreme Barber</p> -->
 
-              <!--соціальні сторінки-->
+      <!--==КОМЕНТАР== соціальні сторінки-->
+      <!--               
               <ul class="employees__social-list list">
                 <li class="employees__social-item">
                   <a
@@ -495,9 +532,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Gallery-->
+      <!--       
       <section class="gallery section">
         <div class="container">
           <h2 class="visually-hidden">Галерея робіт</h2>
@@ -541,13 +579,16 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--исправить разметку див в секцию?-->
+      <!--==КОМЕНТАР== исправить разметку див в секцию?-->
+      <!-- 
       <div class="feedback">
-        <div class="feedback__container container">
-          <!--Contact Form-->
-          <section class="feedback-form">
+        <div class="feedback__container container"> -->
+
+      <!--==КОМЕНТАР== Contact Form-->
+
+      <!-- <section class="feedback-form">
             <h2 class="section-title section-title_dark">Онлайн-запис</h2>
             <form class="contact-form" action="#">
               <div class="contact-form__wraper">
@@ -586,11 +627,11 @@
 
               <button class="btn btn_theme-dark" type="submit">Відправити</button>
             </form>
-          </section>
+          </section> -->
 
-          <!--Contact Information-->
+      <!--==КОМЕНТАР== Contact Information-->
 
-          <section class="contact-info">
+      <!-- <section class="contact-info">
             <h2 id="contacts" class="section-title section-title_dark contact-info__title">
               Контакти
             </h2>
@@ -630,11 +671,12 @@
             <p class="contact-info__date">Щоденно з 9:00 до 22:00</p>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
 
-    <!--FOOTER-->
-    <footer>
+    <!--==КОМЕНТАР== FOOTER-->
+
+    <!-- <footer>
       <div class="footer__container container">
         <p class="copyright">&#169;Copyright 2023</p>
         <ul class="media-list list">
@@ -650,7 +692,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <!--BACKDROP-->
     <div class="backdrop is-hidden" data-modal>

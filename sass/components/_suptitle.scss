@@ -1,11 +1,9 @@
 .suptitle {
-  /*----YES----*/
-  @include flex-center-vert;
-
   @include font($fw: 600);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @include flex-center-vert;
 
   &::before {
     content: '';
@@ -14,19 +12,25 @@
     margin-right: 20px;
     background-color: var(--secondary-text-color-theme-light);
   }
-  /*----end YES----*/
 
   color: var(--secondary-text-color-theme-light);
 }
+
 .suptitle_theme-dark {
-  /*yes*/
   color: var(--primary-text-color-theme-dark);
 
   &::before {
     background-color: #9da4bd;
   }
-  /*yes*/
 }
+
 .suptitle_theme-light {
   color: #303030;
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .suptitle {
+    line-height: 1.18;
+  }
 }
