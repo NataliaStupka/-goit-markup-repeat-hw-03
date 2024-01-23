@@ -8,6 +8,10 @@
     background-image: url(../imeges/services/mobile-services@2x.png);
   }
 }
+.services__title {
+  width: 100%;
+  @include font(42px, 700, 1.17);
+}
 .services__list-container {
   margin-bottom: 50px;
   padding: 30px;
