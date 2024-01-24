@@ -600,23 +600,25 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .hero__container {
-    padding-top: 208px;
-    padding-bottom: 183px;
+  .hero {
     background-color: var(--secondary-text-color-theme-light);
     background-image: linear-gradient(rgba(38, 25, 27, 0.2), rgba(25, 28, 38, 0.2)), url(../imeges/hero/mobile-hero@1x.jpg);
     background-size: cover;
     background-position: center;
-    padding-left: 31px;
-    padding-right: 31px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(38, 25, 27, 0.2), rgba(25, 28, 38, 0.2)), url(../imeges/hero/mobile-hero@2x.jpg);
   }
 }
 @media screen and (max-width: 767px) {
+  .hero__container {
+    padding-top: 208px;
+    padding-bottom: 183px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
   .hero__left-side {
     display: none;
   }
@@ -924,32 +926,10 @@ body {
 }
 
 .employees__title {
-  /*-----YES------*/
   margin-bottom: 44px;
-  /*---end YES------*/
-}
-
-.employees__list {
-  /*YES*/
-  /*сітка*/
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  /*end YES*/
-  /*якщо без сітки то достатньо
-   display: flex;
-  justify-content: space-between;
-  */
-}
-
-.employees__card {
-  /*YES*/
-  /*сітка*/
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-  /*end YES*/
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.19;
 }
 
 .employees__wrapper {
@@ -1037,6 +1017,39 @@ body {
   /*end yes*/
 }
 
+@media screen and (max-width: 1199px) {
+  .employees__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .employees__card {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employees__list {
+    /*YES*/
+    /*сітка*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    /*end YES*/
+    /*якщо без сітки то достатньо
+     display: flex;
+    justify-content: space-between;
+    */
+  }
+  .employees__card {
+    /*YES*/
+    /*сітка*/
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+    /*end YES*/
+  }
+}
 .gallery__suptitle {
   margin-bottom: 44px;
 }
