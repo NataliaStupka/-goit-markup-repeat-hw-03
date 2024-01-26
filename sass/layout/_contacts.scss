@@ -1,13 +1,15 @@
 .contact-info {
-  width: 610px;
-  padding-left: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
 
-  padding-top: 130px;
-  padding-bottom: 130px;
-
-  background-image: url(../imeges/contact/contact-bg.png);
+  background-image: url(../../imeges/contact/mobile-feedback-contact-bg@1x.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contact-info {
+    background-image: url(../../imeges/contact/mobile-feedback-contact-bg@2x.png);
+  }
 }
 .contact-info__title {
   margin-bottom: 40px;
@@ -18,7 +20,7 @@
   margin-bottom: 20px;
 
   &:last-child {
-    margin-bottom: 70px;
+    margin-bottom: 44px;
   }
 }
 
@@ -36,6 +38,62 @@
   color: var(--primary-text-color-theme-dark);
 }
 .contact-info__suptitle {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   color: var(--secondary-text-color-theme-dark);
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .contact-info {
+    background-image: url(../../imeges/contact/tablet-feedback-contact-bg@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contact-info {
+      background-image: url(../../imeges/contact/tablet-feedback-contact-bg@2x.png);
+    }
+  }
+
+  .contact-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-info__working-time {
+    padding-right: 40px;
+  }
+}
+
+//desctop
+@media screen and (min-width: 1200px) {
+  .contact-info {
+    //   width: 610px;
+    //   padding-left: 100px;
+
+    //   padding-top: 130px;
+    //   padding-bottom: 130px;
+
+    background-image: url(../../imeges/contact/desctop-feedback-contact-bg@1x.png);
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contact-info {
+      background-image: url(../../imeges/contact/desctop-feedback-contact-bg@2x.png);
+    }
+  }
+
+  .contact-info__item {
+    //   @include flex-center-vert;
+
+    //   margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  }
+
+  .contact-info__suptitle {
+    margin-bottom: 22px;
+    //   color: var(--secondary-text-color-theme-dark);
+  }
 }

@@ -2,8 +2,8 @@
   @include flex-center-vert;
   justify-content: space-between;
 
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 54px;
+  padding-bottom: 54px;
 
   background-color: #f7f7f7;
 }
@@ -12,4 +12,11 @@
   @include font($fw: 600);
   letter-spacing: 0.2em;
   color: var(--primary-text-color-theme-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
