@@ -82,13 +82,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  width: 480px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
@@ -200,7 +196,6 @@ body {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.17;
-    width: 500px;
   }
 }
 .suptitle {
@@ -725,6 +720,9 @@ body {
     line-height: 1.18;
     color: var(--secondary-text-color-theme-light);
   }
+  .about__title {
+    width: 500px;
+  }
   .about__text {
     width: 415px;
   }
@@ -1108,6 +1106,14 @@ body {
   padding-bottom: 84px;
 }
 
+@media screen and (max-width: 767px) {
+  .feedback-form__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 480px;
+  }
+}
 .contact-form {
   padding-left: 15px;
   padding-right: 15px;
@@ -1207,9 +1213,28 @@ body {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 1199px) {
+  .feedback-form__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 720px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .feedback__container {
+    width: 1200px;
     display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .feedback-form {
+    padding: 130px 40px;
+  }
+  .contact-form {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .contact-info {
@@ -1280,6 +1305,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contact-info {
+    padding-top: 130px;
+    padding-bottom: 130px;
     background-image: url(../../imeges/contact/desctop-feedback-contact-bg@1x.png);
   }
 }
@@ -1289,6 +1316,12 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .feedback-form__container {
+    margin-left: 100px;
+  }
+  .contact-info__wrapper {
+    display: block;
+  }
   .contact-info__item:last-child {
     margin-bottom: 70px;
   }

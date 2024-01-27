@@ -69,8 +69,8 @@
     //   width: 610px;
     //   padding-left: 100px;
 
-    //   padding-top: 130px;
-    //   padding-bottom: 130px;
+    padding-top: 130px;
+    padding-bottom: 130px;
 
     background-image: url(../../imeges/contact/desctop-feedback-contact-bg@1x.png);
     //   background-repeat: no-repeat;
@@ -80,6 +80,14 @@
     .contact-info {
       background-image: url(../../imeges/contact/desctop-feedback-contact-bg@2x.png);
     }
+  }
+
+  .feedback-form__container {
+    margin-left: 100px;
+  }
+
+  .contact-info__wrapper {
+    display: block;
   }
 
   .contact-info__item {

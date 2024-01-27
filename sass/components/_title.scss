@@ -17,6 +17,5 @@
 @media screen and (min-width: 1200px) {
   .section-title {
     @include font(42px, 700, 1.17);
-    width: 500px;
   }
 }
