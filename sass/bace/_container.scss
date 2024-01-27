@@ -1,26 +1,27 @@
 .container {
+  // max-width: 100%; по замовчуванню, так як блочний елемент
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 
-  width: 480px; //??
+  margin: 0 auto; //??
 }
 
-//mobile
-// @media screen and (min-width: 480px) {
-//   .container {
-//     width: 480px;
-//   }
-// }
+//mobile 480+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    // margin: 0 auto;
+  }
+}
 
-//tablet
+//tablet 768+
 @media screen and (min-width: 768px) {
   .container {
     width: 720px; //690+15*2
   }
 }
 
-//desctop
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .container {
     /*Усього ширина контейнера 1170, збыльшино її на 30 (додано padding) */

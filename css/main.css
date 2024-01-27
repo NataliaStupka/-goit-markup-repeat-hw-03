@@ -63,6 +63,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -82,9 +84,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  width: 480px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
@@ -240,7 +246,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
   margin-bottom: 20px;
-  width: 340px;
+  max-width: 340px;
 }
 
 @media screen and (min-width: 768px) {
@@ -590,7 +596,7 @@ body {
 }
 
 .hero__description {
-  width: 315px;
+  max-width: 315px;
 }
 
 @media screen and (max-width: 767px) {
@@ -685,7 +691,7 @@ body {
     display: none;
   }
   .about__title {
-    width: 330px;
+    max-width: 330px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1111,7 +1117,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    width: 480px;
+    max-width: 480px;
   }
 }
 .contact-form {
@@ -1213,12 +1219,11 @@ body {
     margin-right: auto;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feedback-form__container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    width: 720px;
   }
 }
 @media screen and (min-width: 1200px) {

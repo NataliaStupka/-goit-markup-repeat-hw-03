@@ -20,6 +20,10 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+
+  height: auto;
+  // height для відзивчивого зображення
 }
 .list {
   list-style: none;
