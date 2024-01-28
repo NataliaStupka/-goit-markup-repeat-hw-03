@@ -33,8 +33,6 @@
 
   <body>
     <!--HEADER-->
-
-    <!--     
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
@@ -60,9 +58,57 @@
         </nav>
 
         <a href="tel:+380441111111" class="contact-phone-number link">+38 044 111 11 11</a>
-        <button type="button" class="btn btn_theme-dark" data-modal-open>онлайн запис</button>
+        <button type="button" class="btn btn_theme-dark header__btn" data-modal-open>
+          онлайн запис
+        </button>
       </div>
-    </header> -->
+
+      <!--Burger button-->
+      <div class="burger-btn">
+        <button data-menu-open>
+          <svg class="burger-btn__icon" width="24" height="16">
+            <use href="./imeges/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile-menu -->
+      <div class="mobile-menu__backdrop" data-menu>
+        <div class="mobile-menu__window">
+          <button class="mobile-menu__btn-icon" data-menu-close>
+            <svg class="mobile-menu__icon-cross" width="20" height="20">
+              <use href="./imeges/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">Про нас</li>
+              <li class="mobile-menu__item">Послуги та ціни</li>
+              <li class="mobile-menu__item">Майстри</li>
+              <li class="mobile-menu__item">Контакти</li>
+            </ul>
+          </nav>
+          <a class="mobile-menu__phone-number">+38 044 111 11 11</a>
+          <button class="mobile-menu__btn" type="button">Онлайн-запис</button>
+
+          <!--social-list-->
+          <div class="mobile-menu__media">
+            <ul class="media-list list mobile-menu__list">
+              <li class="media-list__item" lang="en">
+                <a href="" class="media-list__link link" target="_blank" rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="media-list__item" lang="en">
+                <a href="" class="media-list__link link" target="_blank" rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!--HERO-->
@@ -923,108 +969,113 @@
         </div>
       </section>
 
+      <!--Feedback-->
       <!--исправить разметку див в секцию?-->
-      <div class="feedback__container">
-        <!--Contact Form-->
-        <section class="feedback-form">
-          <div class="feedback-form__container">
-            <h2 class="section-title section-title_dark feedback__title">Онлайн-запис</h2>
-            <form class="contact-form" action="#">
-              <div class="contact-form__wraper">
-                <label class="contact-form__label"
-                  >Ім'я *
-                  <input
-                    class="contact-form__input"
-                    type="text"
-                    name="username"
-                    placeholder=""
-                    pattern="[a-zA-Zа-яїіА-ЯЇІ]+"
-                    title="Ім'я повинно містити літери кирилеці або латинського алфавіту"
-                    required
-                    minlength="2"
-                  />
-                </label>
-                <label class="contact-form__label"
-                  >Телефон *
-                  <input
-                    class="contact-form__input"
-                    type="tel"
-                    name="phone"
-                    placeholder=""
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="xxx-xxx-xx-xx"
-                    required
-                  />
-                </label>
-              </div>
+      <section class="feedback">
+        <div class="feedback__container container">
+          <!--Contact Form-->
+          <section class="feedback-form">
+            <div class="feedback-form__container">
+              <h2 class="section-title section-title_dark feedback__title">Онлайн-запис</h2>
+              <form class="contact-form" action="#">
+                <div class="contact-form__wraper">
+                  <label class="contact-form__label"
+                    >Ім'я *
+                    <input
+                      class="contact-form__input"
+                      type="text"
+                      name="username"
+                      placeholder=""
+                      pattern="[a-zA-Zа-яїіА-ЯЇІ]+"
+                      title="Ім'я повинно містити літери кирилеці або латинського алфавіту"
+                      required
+                      minlength="2"
+                    />
+                  </label>
+                  <label class="contact-form__label"
+                    >Телефон *
+                    <input
+                      class="contact-form__input"
+                      type="tel"
+                      name="phone"
+                      placeholder=""
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                      title="xxx-xxx-xx-xx"
+                      required
+                    />
+                  </label>
+                </div>
 
-              <textarea
-                class="contact-form__textarea"
-                name="feedback"
-                placeholder="Ваше повідомлення"
-              ></textarea>
+                <textarea
+                  class="contact-form__textarea"
+                  name="feedback"
+                  placeholder="Ваше повідомлення"
+                ></textarea>
 
-              <button class="btn btn_theme-dark contact-form__btn" type="submit">Відправити</button>
-            </form>
-          </div>
-        </section>
+                <button class="btn btn_theme-dark contact-form__btn" type="submit">
+                  Відправити
+                </button>
+              </form>
+            </div>
+          </section>
 
-        <!--Contact Information-->
-        <section class="contact-info">
-          <div class="feedback-form__container">
-            <h2
-              id="contacts"
-              class="section-title section-title_dark contact-info__title feedback__title"
-            >
-              Контакти
-            </h2>
-            <div class="contact-info__wrapper">
-              <address class="contact-info__address">
-                <ul class="contact-info__list list">
-                  <li class="contact-info__item">
-                    <svg class="contact-info__icon">
-                      <use href="./imeges/sprite.svg#icon-map-pin"></use>
-                    </svg>
-                    <a
-                      class="contact-info__link link"
-                      href="https://maps.app.goo.gl/xzmQZ8xFE2KAyBLfA"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >вул. Василькова, 7А Київ, 08132
-                    </a>
-                  </li>
+          <!--Contact Information-->
+          <section class="contact-info">
+            <div class="feedback-form__container">
+              <h2
+                id="contacts"
+                class="section-title section-title_dark contact-info__title feedback__title"
+              >
+                Контакти
+              </h2>
+              <div class="contact-info__wrapper">
+                <address class="contact-info__address">
+                  <ul class="contact-info__list list">
+                    <li class="contact-info__item">
+                      <svg class="contact-info__icon">
+                        <use href="./imeges/sprite.svg#icon-map-pin"></use>
+                      </svg>
+                      <a
+                        class="contact-info__link link"
+                        href="https://maps.app.goo.gl/xzmQZ8xFE2KAyBLfA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >вул. Василькова, 7А Київ, 08132
+                      </a>
+                    </li>
 
-                  <li class="contact-info__item">
-                    <svg class="contact-info__icon">
-                      <use href="./imeges/sprite.svg#icon-phone"></use>
-                    </svg>
-                    <a href="tel:+380441111111" class="contact-info__link link"
-                      >+38 044 111 11 11</a
-                    >
-                  </li>
-                  <li class="contact-info__item">
-                    <svg class="contact-info__icon">
-                      <use href="./imeges/sprite.svg#icon-mail"></use>
-                    </svg>
-                    <a href="mailto:barbershop@email.com" class="contact-info__link"
-                      >barbershop@email.com</a
-                    >
-                  </li>
-                </ul>
-              </address>
+                    <li class="contact-info__item">
+                      <svg class="contact-info__icon">
+                        <use href="./imeges/sprite.svg#icon-phone"></use>
+                      </svg>
+                      <a href="tel:+380441111111" class="contact-info__link link"
+                        >+38 044 111 11 11</a
+                      >
+                    </li>
+                    <li class="contact-info__item">
+                      <svg class="contact-info__icon">
+                        <use href="./imeges/sprite.svg#icon-mail"></use>
+                      </svg>
+                      <a href="mailto:barbershop@email.com" class="contact-info__link"
+                        >barbershop@email.com</a
+                      >
+                    </li>
+                  </ul>
+                </address>
 
-              <div class="contact-info__working-time">
-                <h3 class="suptitle contact-info__suptitle suptitle_theme-dark">Час роботи</h3>
-                <p class="contact-info__date">Щоденно з 9:00 до 22:00</p>
+                <div class="contact-info__working-time">
+                  <h3 class="suptitle contact-info__suptitle suptitle_theme-dark">Час роботи</h3>
+                  <p class="contact-info__date">Щоденно з 9:00 до 22:00</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
+          </section>
+        </div>
+      </section>
     </main>
 
     <!--FOOTER-->
-    <footer>
+    <footer class="footer">
       <div class="footer__container container">
         <p class="copyright">&#169;Copyright 2023</p>
         <ul class="media-list list">
@@ -1127,6 +1178,7 @@
       </a>
     </div>
 
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

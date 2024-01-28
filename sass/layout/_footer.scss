@@ -1,11 +1,12 @@
+.footer {
+  background-color: #f7f7f7;
+}
 .footer__container {
   @include flex-center-vert;
   justify-content: space-between;
 
   padding-top: 54px;
   padding-bottom: 54px;
-
-  background-color: #f7f7f7;
 }
 
 .copyright {

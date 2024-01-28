@@ -1,4 +1,4 @@
-.feedback__container {
+.feedback {
   background-color: #191c26;
 }
 .feedback-form {
@@ -113,22 +113,21 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feedback-form__container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-
-    // width: 720px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // margin: 0 auto;
   }
 }
 
 //desctop
 @media screen and (min-width: 1200px) {
   .feedback__container {
-    width: 1200px;
+    // width: 1200px;
     display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // margin: 0 auto;
+
     // padding-top: 130px;
     // padding-bottom: 130px;
   }
