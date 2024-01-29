@@ -14,13 +14,16 @@
 
 /*.logo*/
 .header__logo {
-  margin-right: 70px;
   animation-duration: 2000ms; /*тривалість*/
   animation-timing-function: linear; /*розподіл часу для анімації*/
   animation-delay: 1000ms; /*затримка*/
   animation-iteration-count: 3; /*повторення*/
 }
-
+.burger__btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 .mobile-menu__backdrop {
   position: fixed;
   z-index: 10;
@@ -109,6 +112,9 @@
     display: flex;
     align-items: center;
   }
+  .header__container {
+    margin: 0px;
+  }
   .menu {
     display: none;
   }
@@ -124,12 +130,19 @@
     fill: var(--secondary-text-color-theme-dark);
   }
   .burger {
+    margin-left: auto;
     margin-right: 40px;
   }
 }
 
 //tablet
 @media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 70px;
+  }
+  .burger {
+    display: none;
+  }
   .header__container {
     @include flex-center-vert;
   }

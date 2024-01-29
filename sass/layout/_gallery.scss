@@ -5,6 +5,7 @@
   margin-bottom: 30px;
 }
 .gallery__img {
+  width: 450px; //??????
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,6 +28,11 @@
     flex-basis: calc((100% - 30px * 2) / 2);
     margin-bottom: 0;
   }
+
+  //??????
+  .gallery__img {
+    width: 340px;
+  }
 }
 
 //desctop
@@ -45,5 +51,10 @@
     padding-left: 30px;
     padding-top: 30px;
     flex-basis: calc((100% - 30px * 4) / 4);
+  }
+
+  //?????? ПЕРЕВІРИТИ ------------------------
+  .gallery__img {
+    width: 270px;
   }
 }

@@ -505,11 +505,16 @@ body {
 
 /*.logo*/
 .header__logo {
-  margin-right: 70px;
   animation-duration: 2000ms; /*тривалість*/
   animation-timing-function: linear; /*розподіл часу для анімації*/
   animation-delay: 1000ms; /*затримка*/
   animation-iteration-count: 3; /*повторення*/
+}
+
+.burger__btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .mobile-menu__backdrop {
@@ -608,6 +613,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .header__container {
+    margin: 0px;
+  }
   .menu {
     display: none;
   }
@@ -621,10 +629,17 @@ body {
     fill: var(--secondary-text-color-theme-dark);
   }
   .burger {
+    margin-left: auto;
     margin-right: 40px;
   }
 }
 @media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 70px;
+  }
+  .burger {
+    display: none;
+  }
   .header__container {
     display: flex;
     align-items: center;
@@ -953,7 +968,7 @@ body {
 }
 
 .advantages__description {
-  width: 390px;
+  max-width: 390px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
@@ -1131,6 +1146,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .employees__card:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .employees__list {
@@ -1164,6 +1182,7 @@ body {
 }
 
 .gallery__img {
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1185,6 +1204,9 @@ body {
     flex-basis: calc((100% - 60px) / 2);
     margin-bottom: 0;
   }
+  .gallery__img {
+    width: 340px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .gallery__list {
@@ -1200,6 +1222,9 @@ body {
     padding-left: 30px;
     padding-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
+  }
+  .gallery__img {
+    width: 270px;
   }
 }
 .feedback {
