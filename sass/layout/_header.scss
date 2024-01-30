@@ -23,6 +23,7 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 //mobile-menu
@@ -64,9 +65,11 @@
   right: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .mobile-menu__icon-cross {
   fill: var(--secondary-text-color-theme-light);
+  cursor: pointer;
 }
 
 .mobile-menu__nav {
@@ -112,6 +115,14 @@
   padding: 12px 37px;
   margin-left: 40px;
   margin-bottom: 64px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color-theme-dark);
+    background-color: var(--accent-color);
+  }
 }
 
 .mobile-menu__media {

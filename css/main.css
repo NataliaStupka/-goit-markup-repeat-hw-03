@@ -354,7 +354,7 @@ body {
   padding-left: 42px;
   transition: border-color var(--transition);
 }
-.bd-form__input:focus {
+.bd-form__input:focus, .bd-form__input:hover {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -494,6 +494,7 @@ body {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .mobile-menu__backdrop {
@@ -531,10 +532,12 @@ body {
   right: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .mobile-menu__icon-cross {
   fill: var(--secondary-text-color-theme-light);
+  cursor: pointer;
 }
 
 .mobile-menu__nav {
@@ -588,6 +591,12 @@ body {
   padding: 12px 37px;
   margin-left: 40px;
   margin-bottom: 64px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+.mobile-menu__btn:hover, .mobile-menu__btn:focus {
+  color: var(--secondary-text-color-theme-dark);
+  background-color: var(--accent-color);
 }
 
 .mobile-menu__media {
