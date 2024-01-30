@@ -68,7 +68,6 @@
 }
 
 .employees__social-link {
-  /*yes*/
   @include flex-center;
 
   width: 40px;
@@ -84,13 +83,10 @@
     fill: var(--accent-color);
     background-color: var(--primary-text-color-theme-light);
   }
-  /*end yes*/
 }
 .social__icon {
-  /*yes*/
   width: 20px;
   height: 20px;
-  /*end yes*/
 }
 
 // <1200px
@@ -104,18 +100,15 @@
     margin-bottom: 64px;
   }
 }
-//
 
-//desctop
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .employees__list {
-    /*YES*/
     /*сітка*/
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    /*end YES*/
 
     /*якщо без сітки то достатньо
    display: flex;
@@ -123,11 +116,9 @@
   */
   }
   .employees__card {
-    /*YES*/
     /*сітка*/
     flex-basis: calc((100% - 30px * 3) / 3);
     margin-left: 30px;
     margin-top: 30px;
-    /*end YES*/
   }
 }

@@ -1,6 +1,5 @@
 .backdrop {
   z-index: 10;
-  /*yes*/
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +9,6 @@
   background-color: rgba(157, 164, 189, 0.5);
 
   transition: opacity var(--transition), visibility var(--transition);
-  /*end yes*/
 }
 
 .is-hidden {

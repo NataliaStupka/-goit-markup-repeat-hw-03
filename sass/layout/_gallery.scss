@@ -10,7 +10,7 @@
   margin-right: auto;
 }
 
-//tablet
+//tablet 768+
 @media screen and (min-width: 768px) {
   .gallery__list {
     @include flex-center-horiz;
@@ -35,7 +35,7 @@
   }
 }
 
-//desctop
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .gallery__list {
     display: flex;
@@ -53,7 +53,7 @@
     flex-basis: calc((100% - 30px * 4) / 4);
   }
 
-  //?????? ПЕРЕВІРИТИ ------------------------
+  //??
   .gallery__img {
     width: 270px;
   }

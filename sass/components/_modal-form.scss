@@ -1,32 +1,25 @@
 .bd-form__title {
-  /*yes*/
-
   @include font(18px, 700, 1.15);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  /*end yes*/
+
   display: block;
 }
 .bd-form {
-  /*yes*/
   display: flex;
   flex-direction: column;
-  /*end yes*/
 }
-.bd-form__label {
-  /*yes*/
 
+.bd-form__label {
   @include font($fs: 14px); /*стилі для тексту які приміняться до "Ім'я", ...*/
   margin-bottom: 10px;
-  /*end yes*/
 }
 .bd-form__input-wrapper {
   position: relative;
   display: block;
 }
 .bd-form__input {
-  /*yes*/
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -34,7 +27,6 @@
   margin-top: 4px;
   padding-left: 42px;
   transition: border-color var(--transition);
-  /*end yes*/
 
   &:focus {
     outline: none;
@@ -53,19 +45,14 @@
   }
 }
 .bd-form__icon {
-  /*yes*/
-  /*display: block;*/
-
   @include position($left: 12px, $transform: translateY(-50%));
 
   width: 18px;
   height: 18px;
   transition: fill var(--transition);
-  /*end yes*/
 }
 
 .bd-form__message {
-  /*yes*/
   width: 100%;
   height: 120px;
   margin-top: 4px;
@@ -84,7 +71,6 @@
     color: var(--primary-text-color-theme-dark);
     text-transform: uppercase;
   }
-  /*end yes*/
 }
 
 /*створення кастомного checkbox (befor на label(замінить оригінальний checkbox), на checkbox клас visualy-hidden)*/

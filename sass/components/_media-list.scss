@@ -1,9 +1,7 @@
 /*---Instagram, Youtube----*/
 .media-list {
-  /*YES*/
-  @include flex-center-vert;
-  /*end YES*/
-
+    @include flex-center-vert;
+  
   &::before {
     @include pseudo;
 

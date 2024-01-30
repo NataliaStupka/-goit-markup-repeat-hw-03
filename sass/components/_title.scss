@@ -10,10 +10,11 @@
   color: var(--secondary-text-color-theme-dark);
 }
 
-//tablet
+//tablet 768+
 @media screen and (min-width: 768px) {
 }
-//desctop
+
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .section-title {
     @include font(42px, 700, 1.17);

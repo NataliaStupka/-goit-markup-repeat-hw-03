@@ -14,7 +14,7 @@
   }
 }
 
-//tablet
+//tablet 768+
 @media screen and (min-width: 768px) {
   .about__container {
     display: flex;
@@ -30,7 +30,7 @@
   }
 }
 
-//desctop
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .about__left-side {
     margin-right: 64px;

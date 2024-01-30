@@ -35,7 +35,7 @@
   }
 }
 
-//tablet
+//tablet 768+
 @media screen and (min-width: 768px) {
   .hero__container {
     display: flex;
@@ -76,7 +76,7 @@
   }
 }
 
-//desctop
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .hero__right-side {
     padding-bottom: 206px;

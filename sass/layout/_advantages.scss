@@ -54,7 +54,7 @@
   color: var(--secondary-text-color-theme-light);
 }
 
-//tablet
+//tablet 768+
 @media screen and (min-width: 768px) {
   .advantages__description {
     width: 450px;
@@ -64,7 +64,7 @@
   }
 }
 
-//desctop
+//desctop 1200+
 @media screen and (min-width: 1200px) {
   .advantages__container {
     display: flex;
