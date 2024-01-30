@@ -285,14 +285,14 @@ body {
   width: 528px;
   height: 581px;
   background-color: var(--secondary-text-color-theme-dark);
-  padding: 50px 40px;
+  padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 .btn-close {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 15px;
   display: flex;
   align-items: center;
@@ -318,12 +318,12 @@ body {
 }
 
 .bd-form__title {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.13;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.02em;
-  margin-bottom: 15px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
   display: block;
 }
 
@@ -333,7 +333,7 @@ body {
 }
 
 .bd-form__label {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.36;
   /*стилі для тексту які приміняться до "Ім'я", ...*/
@@ -347,7 +347,7 @@ body {
 
 .bd-form__input {
   width: 100%;
-  height: 30px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
@@ -374,18 +374,18 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   transition: fill var(--transition);
 }
 
 .bd-form__message {
   width: 100%;
-  height: 110px;
+  height: 120px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 10px 14px;
+  padding: 12px 16px;
   resize: none;
   transition: border-color var(--transition);
 }
@@ -406,15 +406,15 @@ body {
 .bd-form__checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--primary-text-color-theme-light);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .bd-form__checkbox-label::before {
   display: block;
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 1px solid grey;
   border-radius: 4px;
   margin-right: 7px;
@@ -440,121 +440,6 @@ body {
   outline-color: transparent;
 }
 
-@media screen and (min-width: 1200px) {
-  .bd-form__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    display: block;
-  }
-  .bd-form {
-    display: flex;
-    flex-direction: column;
-  }
-  .bd-form__label {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.36;
-    /*стилі для тексту які приміняться до "Ім'я", ...*/
-    margin-bottom: 10px;
-  }
-  .bd-form__input-wrapper {
-    position: relative;
-    display: block;
-  }
-  .bd-form__input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-top: 4px;
-    padding-left: 42px;
-    transition: border-color var(--transition);
-  }
-  .bd-form__input:focus, .bd-form__input:hover {
-    outline: none;
-    border-color: var(--accent-color);
-  }
-  .bd-form__input:focus + .bd-form-icon {
-    /* + селектор першого сусіда зверху*/
-    fill: var(--accent-color);
-  }
-  .bd-form__input:not(:placeholder-shown):valid {
-    border-color: green;
-  }
-  .bd-form__input:not(:placeholder-shown):invalid {
-    border-color: red;
-  }
-  .bd-form__icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    transition: fill var(--transition);
-  }
-  .bd-form__message {
-    width: 100%;
-    height: 120px;
-    margin-top: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-    resize: none;
-    transition: border-color var(--transition);
-  }
-  .bd-form__message:focus {
-    outline: none;
-    border-color: var(--accent-color);
-  }
-  .bd-form__message::placeholder {
-    color: var(--primary-text-color-theme-dark);
-    text-transform: uppercase;
-  }
-  /*створення кастомного checkbox (befor на label(замінить оригінальний checkbox), на checkbox клас visualy-hidden)*/
-  .bd-form__checkbox {
-    /*стандартний чекбокс схований (visually-hidden)*/
-  }
-  .bd-form__checkbox-label {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: var(--primary-text-color-theme-light);
-    margin-bottom: 30px;
-  }
-  .bd-form__checkbox-label::before {
-    display: block;
-    content: "";
-    width: 18px;
-    height: 18px;
-    border: 1px solid grey;
-    border-radius: 4px;
-    margin-right: 7px;
-  }
-  .bd-form__checkbox:focus + .bd-form__checkbox-label::before {
-    outline: 1px solid var(--accent-color);
-    border-color: transparent;
-  }
-  .bd-form__checkbox:checked + .bd-form__checkbox-label::before {
-    background-color: var(--accent-color);
-    background-image: url("../imeges/icon-check.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border-color: transparent;
-    outline: none;
-  }
-  .bd__btn {
-    margin: 0 auto;
-  }
-  .bd__btn:focus {
-    outline-color: transparent;
-  }
-}
 .icon-arrow-up {
   position: fixed;
   right: 10px;

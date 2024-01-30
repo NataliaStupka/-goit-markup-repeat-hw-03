@@ -4,7 +4,7 @@
   width: 528px;
   height: 581px;
   background-color: var(--secondary-text-color-theme-dark);
-  padding: 50px 40px;
+  padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -13,7 +13,7 @@
 
 .btn-close {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 15px;
 
   @include flex-center-vert;
